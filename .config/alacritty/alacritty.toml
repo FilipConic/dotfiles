@@ -1,0 +1,25 @@
+[general]
+import = ["/home/filip/.config/alacritty/alacritty-theme/themes/rose_pine.toml"]
+live_config_reload = true
+
+[font]
+size = 20.0
+normal = { family = "UbuntuMono Nerd Font", style = "Regular" }
+bold = { family = "UbuntuMono Nerd Font", style = "Bold" }
+italic = { family = "UbuntuMono Nerd Font", style = "Italic" }
+
+[window]
+startup_mode = "Fullscreen"
+decorations = "None"
+
+[keyboard]
+bindings = [
+	{ key = "Q", mods = "Alt", action = "Quit" },
+	{ key = "=", mods = "Control", action = "IncreaseFontSize" },
+	{ key = "-", mods = "Control", action = "DecreaseFontSize" },
+	{ key = "0", mods = "Control", action = "ResetFontSize" },
+	{ key = "V", mods = "Control", action = "Paste" }
+]
+
+[env]
+TERM = "alacritty"
