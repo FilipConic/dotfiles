@@ -1,0 +1,22 @@
+set scrolloff=10
+set showmode
+set number
+set relativenumber
+set wrap
+set clipboard+=unnamed
+set tabstop=4
+set shiftwidth=4
+set noswapfile
+
+let mapleader = " "
+
+nnoremap <leader>ww :action ShowErrorDescription<CR>
+nnoremap <leader>ff :action GotoFile<CR>
+nnoremap [d :action GotoNextError<CR>
+nnoremap ]d :action GotoPreviousError<CR>
+nnoremap <A-h> :action PreviousTab<CR>
+nnoremap <A-l> :action NextTab<CR>
+nnoremap <leader>e :action ActivateProjectToolWindow<CR>
+nnoremap <A-q> :action CloseContent<CR>
+
+set highlightedyank
